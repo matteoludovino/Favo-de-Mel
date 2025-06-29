@@ -7,11 +7,13 @@
     <title>Minha Turma - Projeto Extensionista</title>
 
 </head>
-<body>
+<body data-page="turma">
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="logo">LOGO</div>
+            <div class="logo">Favo de Mel
+                <img src="/assets/logo.png" alt="Logo Favo de Mel" class="logo-img">    
+            </div>
             <ul class="nav-menu">
                 <li><a href="aulas.html">AULAS</a></li>
                 <li><a href="atividades.html">ATIVIDADES</a></li>
@@ -31,17 +33,17 @@
             
             <div class="class-tabs">
                 <div class="class-tab active">Todas as Turmas</div>
-                <div class="class-tab">Matemática</div>
-                <div class="class-tab">Português</div>
-                <div class="class-tab">Ciências</div>
-                <div class="class-tab">História</div>
-                <div class="class-tab">Geografia</div>
+                <div class="class-tab">Internet</div>
+                <div class="class-tab">Hardware</div>
+                <div class="class-tab">Software</div>
+                <div class="class-tab">Word</div>
+                <div class="class-tab">Excel</div>
             </div>
             
             <!-- Turma de Matemática -->
             <div class="class-container">
                 <div class="class-header">
-                    <h2 class="class-title">Turma de Matemática</h2>
+                    <h2 class="class-title">Turma de Internet</h2>
                     <div class="class-meta">25 alunos</div>
                 </div>
                 
@@ -51,7 +53,7 @@
                     </div>
                     <div class="teacher-info">
                         <div class="teacher-name">Prof. Carlos Oliveira</div>
-                        <div class="teacher-subject">Matemática Avançada | Mestrado em Educação</div>
+                        <div class="teacher-subject">Internet avançada | Mestrado em Redes</div>
                     </div>
                     <div class="teacher-contact">
                         <button class="contact-btn btn-primary">Enviar Mensagem</button>
@@ -146,7 +148,7 @@
             <!-- Turma de Português -->
             <div class="class-container">
                 <div class="class-header">
-                    <h2 class="class-title">Turma de Português</h2>
+                    <h2 class="class-title">Turma de Hardware</h2>
                     <div class="class-meta">22 alunos</div>
                 </div>
                 
@@ -156,7 +158,7 @@
                     </div>
                     <div class="teacher-info">
                         <div class="teacher-name">Profa. Juliana Santos</div>
-                        <div class="teacher-subject">Língua Portuguesa | Especialista em Literatura</div>
+                        <div class="teacher-subject">Hardware | Especialista em Hardware</div>
                     </div>
                     <div class="teacher-contact">
                         <button class="contact-btn btn-primary">Enviar Mensagem</button>
@@ -221,7 +223,7 @@
             <!-- Turma de Ciências -->
             <div class="class-container">
                 <div class="class-header">
-                    <h2 class="class-title">Turma de Ciências</h2>
+                    <h2 class="class-title">Turma de Software</h2>
                     <div class="class-meta">18 alunos</div>
                 </div>
                 
@@ -231,7 +233,7 @@
                     </div>
                     <div class="teacher-info">
                         <div class="teacher-name">Prof. Marcelo Andrade</div>
-                        <div class="teacher-subject">Ciências Naturais | Doutor em Biologia</div>
+                        <div class="teacher-subject">Software | Doutor em Software</div>
                     </div>
                     <div class="teacher-contact">
                         <button class="contact-btn btn-primary">Enviar Mensagem</button>
@@ -284,36 +286,6 @@
             </div>
         </main>
     </div>
-
-    <script>
-        // Função para alternar entre abas de turmas
-        document.querySelectorAll('.class-tab').forEach(tab => {
-            tab.addEventListener('click', function() {
-                document.querySelector('.class-tab.active').classList.remove('active');
-                this.classList.add('active');
-                
-                // Aqui iria a lógica para filtrar as turmas exibidas
-                // Por enquanto estamos mostrando todas as turmas sempre
-            });
-        });
-        
-        // Função para enviar mensagem (simulação)
-        document.querySelectorAll('.btn-primary').forEach(btn => {
-            if (btn.textContent.includes('Mensagem')) {
-                btn.addEventListener('click', function() {
-                    alert('Sistema de mensagens será aberto em uma versão futura!');
-                });
-            }
-        });
-        
-        // Função para ver perfil (simulação)
-        document.querySelectorAll('.btn-outline').forEach(btn => {
-            if (btn.textContent.includes('Perfil')) {
-                btn.addEventListener('click', function() {
-                    alert('Perfil do professor será exibido em uma versão futura!');
-                });
-            }
-        });
-    </script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

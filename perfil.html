@@ -8,11 +8,13 @@
     <title>Meu Perfil - Favo de Mel</title>
 </head>
 
-<body>
+<body data-page="perfil">
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="logo">LOGO</div>
+            <div class="logo">Favo de Mel
+                <img src="/assets/logo.png" alt="Logo Favo de Mel" class="logo-img">    
+            </div>
             <ul class="nav-menu">
                 <li><a href="aulas.html">AULAS</a></li>
                 <li><a href="atividades.html">ATIVIDADES</a></li>
@@ -39,8 +41,8 @@
                         <input type="file" id="photo-upload" accept="image/*">
                     </div>
 
-                    <h2 class="profile-name" id="display-name">Maria da Silva</h2>
-                    <p class="profile-email">maria.silva@escola.edu.br</p>
+                    <h2 class="profile-name" id="display-name">Aluno</h2>
+                    <p class="profile-email">nome.matricula@escola.edu.br</p>
 
                     <div class="profile-stats">
                         <div class="stat-item">
@@ -69,14 +71,13 @@
                                 Editar
                             </button>
                         </h3>
-                        <p class="profile-bio" id="display-bio">Estudante do 3º ano do Ensino Médio, apaixonada por
-                            matemática e ciências. Participante do projeto extensionista desde 2024.</p>
+                        <p class="profile-bio" id="display-bio">Eu gosto de computador.</p>
 
                         <div class="edit-form" id="bio-form">
                             <div class="form-group">
                                 <label for="bio-input">Biografia</label>
                                 <textarea id="bio-input"
-                                    class="form-control">Estudante do 3º ano do Ensino Médio, apaixonada por matemática e ciências. Participante do projeto extensionista desde 2024.</textarea>
+                                    class="form-control">Eu gosto de computador.</textarea>
                             </div>
                             <div class="form-actions">
                                 <button class="btn btn-outline" id="cancel-bio-btn">Cancelar</button>
@@ -98,17 +99,17 @@
                             </button>
                         </h3>
                         <div class="interests-list" id="display-interests">
-                            <span class="interest-tag">Matemática</span>
-                            <span class="interest-tag">Ciências</span>
-                            <span class="interest-tag">Programação</span>
-                            <span class="interest-tag">Robótica</span>
+                            <span class="interest-tag">Digitação</span>
+                            <span class="interest-tag">Internet</span>
+                            <span class="interest-tag">Word</span>
+                            <span class="interest-tag">Hardware</span>
                         </div>
 
                         <div class="edit-form" id="interests-form">
                             <div class="form-group">
                                 <label for="interests-input">Interesses (separados por vírgula)</label>
                                 <input type="text" id="interests-input" class="form-control"
-                                    value="Matemática, Ciências, Programação, Robótica">
+                                    value="Digitação, Internet, Word, Hardware">
                             </div>
                             <div class="form-actions">
                                 <button class="btn btn-outline" id="cancel-interests-btn">Cancelar</button>
@@ -127,18 +128,18 @@
 
                         <div class="form-group">
                             <label for="name-input">Nome Completo</label>
-                            <input type="text" id="name-input" class="form-control" value="Maria da Silva">
+                            <input type="text" id="name-input" class="form-control" value="Aluno">
                         </div>
 
                         <div class="form-group">
                             <label for="email-input">E-mail</label>
-                            <input type="email" id="email-input" class="form-control" value="maria.silva@escola.edu.br"
+                            <input type="email" id="email-input" class="form-control" value="nome.matricula@escola.edu.br"
                                 disabled>
                         </div>
 
                         <div class="form-group">
                             <label for="birthday-input">Data de Nascimento</label>
-                            <input type="date" id="birthday-input" class="form-control" value="2007-05-15">
+                            <input type="date" id="birthday-input" class="form-control" value="2004-05-15">
                         </div>
 
                         <div class="form-actions" style="justify-content: flex-start; margin-top: 25px;">
@@ -174,91 +175,7 @@
             </div>
         </main>
     </div>
-
-    <script>
-        // Funções para edição de foto
-        document.getElementById('photo-upload').addEventListener('change', function (e) {
-            if (e.target.files && e.target.files[0]) {
-                const reader = new FileReader();
-
-                reader.onload = function (event) {
-                    document.getElementById('profile-photo').src = event.target.result;
-                }
-
-                reader.readAsDataURL(e.target.files[0]);
-            }
-        });
-
-        // Funções para edição de biografia
-        document.getElementById('edit-bio-btn').addEventListener('click', function () {
-            document.getElementById('display-bio').style.display = 'none';
-            document.getElementById('bio-form').style.display = 'block';
-        });
-
-        document.getElementById('cancel-bio-btn').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.getElementById('display-bio').style.display = 'block';
-            document.getElementById('bio-form').style.display = 'none';
-        });
-
-        document.getElementById('save-bio-btn').addEventListener('click', function (e) {
-            e.preventDefault();
-            const newBio = document.getElementById('bio-input').value;
-            document.getElementById('display-bio').textContent = newBio;
-            document.getElementById('display-bio').style.display = 'block';
-            document.getElementById('bio-form').style.display = 'none';
-            alert('Biografia atualizada com sucesso!');
-        });
-
-        // Funções para edição de interesses
-        document.getElementById('edit-interests-btn').addEventListener('click', function () {
-            document.getElementById('display-interests').style.display = 'none';
-            document.getElementById('interests-form').style.display = 'block';
-        });
-
-        document.getElementById('cancel-interests-btn').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.getElementById('display-interests').style.display = 'flex';
-            document.getElementById('interests-form').style.display = 'none';
-        });
-
-        document.getElementById('save-interests-btn').addEventListener('click', function (e) {
-            e.preventDefault();
-            const interestsInput = document.getElementById('interests-input').value;
-            const interestsArray = interestsInput.split(',').map(item => item.trim());
-
-            const interestsContainer = document.getElementById('display-interests');
-            interestsContainer.innerHTML = '';
-
-            interestsArray.forEach(interest => {
-                if (interest) {
-                    const tag = document.createElement('span');
-                    tag.className = 'interest-tag';
-                    tag.textContent = interest;
-                    interestsContainer.appendChild(tag);
-                }
-            });
-
-            document.getElementById('display-interests').style.display = 'flex';
-            document.getElementById('interests-form').style.display = 'none';
-            alert('Interesses atualizados com sucesso!');
-        });
-
-        // Função para salvar informações pessoais
-        document.getElementById('save-profile-btn').addEventListener('click', function () {
-            const newName = document.getElementById('name-input').value;
-            document.getElementById('display-name').textContent = newName;
-            alert('Informações pessoais atualizadas com sucesso!');
-        });
-
-        // Função para alterar senha
-        document.getElementById('change-password-btn').addEventListener('click', function () {
-            alert('Senha alterada com sucesso! (simulação)');
-            document.getElementById('current-password').value = '';
-            document.getElementById('new-password').value = '';
-            document.getElementById('confirm-password').value = '';
-        });
-    </script>
+    <script src="javascript/script.js"></script>
 </body>
 
 </html>

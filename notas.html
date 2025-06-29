@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css   ">
     <title>Minhas Notas - Projeto Extensionista</title>
 </head>
-<body>
+<body data-page="notas">
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <div class="logo">LOGO</div>
+            <div class="logo">Favo de Mel
+                <img src="/assets/logo.png" alt="Logo Favo de Mel" class="logo-img">    
+            </div>
             <ul class="nav-menu">
                 <li><a href="aulas.html">AULAS</a></li>
                 <li><a href="atividades.html">ATIVIDADES</a></li>
@@ -39,9 +41,9 @@
                 <!-- Matemática -->
                 <div class="summary-card">
                     <div class="subject-header">
-                        <div class="subject-icon">M</div>
+                        <div class="subject-icon">I</div>
                         <div>
-                            <div class="subject-name">Matemática</div>
+                            <div class="subject-name">Internet</div>
                             <div class="subject-avg">Média: 8.7</div>
                         </div>
                     </div>
@@ -75,9 +77,9 @@
                 <!-- Português -->
                 <div class="summary-card">
                     <div class="subject-header">
-                        <div class="subject-icon">P</div>
+                        <div class="subject-icon">H</div>
                         <div>
-                            <div class="subject-name">Português</div>
+                            <div class="subject-name">Hardware</div>
                             <div class="subject-avg">Média: 7.9</div>
                         </div>
                     </div>
@@ -111,9 +113,9 @@
                 <!-- Ciências -->
                 <div class="summary-card">
                     <div class="subject-header">
-                        <div class="subject-icon">C</div>
+                        <div class="subject-icon">S</div>
                         <div>
-                            <div class="subject-name">Ciências</div>
+                            <div class="subject-name">Software</div>
                             <div class="subject-avg">Média: 9.2</div>
                         </div>
                     </div>
@@ -159,56 +161,56 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Matemática</td>
-                        <td>Álgebra Linear</td>
+                        <td>Redes</td>
+                        <td>Internet</td>
                         <td>10/05/2025</td>
                         <td>18/20</td>
                         <td class="grade-score grade-good">9.0</td>
                         <td><span class="grade-status status-completed">Concluída</span></td>
                     </tr>
                     <tr>
-                        <td>Português</td>
-                        <td>Análise Textual</td>
+                        <td>Software</td>
+                        <td>Word</td>
                         <td>12/05/2025</td>
                         <td>15/20</td>
                         <td class="grade-score grade-medium">7.5</td>
                         <td><span class="grade-status status-completed">Concluída</span></td>
                     </tr>
                     <tr>
-                        <td>Ciências</td>
-                        <td>Genética</td>
+                        <td>Hardware</td>
+                        <td>Montagem peças</td>
                         <td>15/05/2025</td>
                         <td>19/20</td>
                         <td class="grade-score grade-good">9.5</td>
                         <td><span class="grade-status status-completed">Concluída</span></td>
                     </tr>
                     <tr>
-                        <td>Matemática</td>
-                        <td>Geometria Espacial</td>
+                        <td>Sistema operacional</td>
+                        <td>Windows</td>
                         <td>18/05/2025</td>
                         <td>17/20</td>
                         <td class="grade-score grade-good">8.5</td>
                         <td><span class="grade-status status-completed">Concluída</span></td>
                     </tr>
                     <tr>
-                        <td>História</td>
-                        <td>Era Vargas</td>
+                        <td>Excel</td>
+                        <td>Criação planilhas</td>
                         <td>20/05/2025</td>
                         <td>14/20</td>
                         <td class="grade-score grade-medium">7.0</td>
                         <td><span class="grade-status status-completed">Concluída</span></td>
                     </tr>
                     <tr>
-                        <td>Português</td>
-                        <td>Redação Dissertativa</td>
+                        <td>Inglês</td>
+                        <td>Expressões tecnológicas</td>
                         <td>22/05/2025</td>
                         <td>-</td>
                         <td class="grade-score">-</td>
                         <td><span class="grade-status status-pending">Correção</span></td>
                     </tr>
                     <tr>
-                        <td>Ciências</td>
-                        <td>Ecologia</td>
+                        <td>Windows</td>
+                        <td>Digitação</td>
                         <td>25/05/2025</td>
                         <td>-</td>
                         <td class="grade-score">-</td>
@@ -218,21 +220,6 @@
             </table>
         </main>
     </div>
-
-    <script>
-        // Função para alternar entre abas
-        document.querySelectorAll('.tab').forEach(tab => {
-            tab.addEventListener('click', function() {
-                document.querySelector('.tab.active').classList.remove('active');
-                this.classList.add('active');
-                
-                // Aqui iria a lógica para mostrar o conteúdo correspondente à aba
-                // Por enquanto estamos mostrando tudo na mesma página
-            });
-        });
-        
-        // Simulação de gráfico (seria implementado com uma biblioteca como Chart.js na versão real)
-        console.log('Aqui seria implementado um gráfico de desempenho com Chart.js ou similar');
-    </script>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

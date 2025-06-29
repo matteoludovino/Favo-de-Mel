@@ -34,6 +34,11 @@ body {
     text-align: center;
 }
 
+.logo img {
+    height: 30px;
+    width: 30px;
+}
+
 .nav-menu {
     list-style: none;
 }
@@ -101,6 +106,15 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+}
+
+.card-header h2 {
+    font-size: 20px;
+    color: #023146;
+}
+
+.card-header a {
+    text-decoration: none; 
 }
 
 .card-title {
