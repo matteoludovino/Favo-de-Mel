@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Atividades - Favo de Mel</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">LOGO</div>
+            <ul class="nav-menu">
+                <li><a href="aulas.html">AULAS</a></li>
+                <li><a href="atividades.html">ATIVIDADES</a></li>
+                <li><a href="avisos.html">AVISOS</a></li>
+                <li><a href="calendario.html">CALENDÁRIO</a></li>
+                <li><a href="#">MEU PERFIL</a></li>
+                <li><a href="#">MINHA TURMA</a></li>
+                <li><a href="#">MINHAS NOTAS</a></li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <header class="page-header">
+                <h1 class="page-title">Atividades</h1>
+                <div class="filters">
+                    <button class="filter-btn active">Todas</button>
+                    <button class="filter-btn">Pendentes</button>
+                    <button class="filter-btn">Concluídas</button>
+                    <button class="filter-btn">Matemática</button>
+                    <button class="filter-btn">Português</button>
+                    <button class="filter-btn">Ciências</button>
+                    <button class="filter-btn">História</button>
+                </div>
+            </header>
+
+            <!-- Matemática -->
+            <section class="subject-section">
+                <div class="subject-header">
+                    <div class="subject-icon">M</div>
+                    <h2 class="subject-title">Matemática</h2>
+                </div>
+
+                <div class="activities-grid">
+                    <div class="activity-card">
+                        <h3 class="activity-title">Exercícios de Álgebra</h3>
+                        <div class="activity-meta">
+                            <span>Data: 15/05/2025</span>
+                            <span class="activity-status status-pending">Pendente</span>
+                        </div>
+                        <p class="activity-desc">Resolva os exercícios sobre equações de primeiro grau e envie antes da
+                            data limite.</p>
+                        <div class="activity-actions">
+                            <button class="btn btn-outline">Detalhes</button>
+                            <button class="btn btn-primary">Iniciar</button>
+                        </div>
+                    </div>
+
+                    <div class="activity-card">
+                        <h3 class="activity-title">Prova de Geometria</h3>
+                        <div class="activity-meta">
+                            <span>Data: 20/05/2025</span>
+                            <span class="activity-status status-completed">Concluída</span>
+                        </div>
+                        <p class="activity-desc">Prova sobre ângulos, triângulos e polígonos. Você já completou esta
+                            atividade.</p>
+                        <div class="activity-actions">
+                            <button class="btn btn-outline">Ver Resultado</button>
+                            <button class="btn btn-primary">Revisar</button>
+                        </div>
+                    </div>
+
+                    <div class="activity-card">
+                        <h3 class="activity-title">Trabalho de Estatística</h3>
+                        <div class="activity-meta">
+                            <span>Data: 10/05/2025</span>
+                            <span class="activity-status status-overdue">Atrasada</span>
+                        </div>
+                        <p class="activity-desc">Análise de dados sobre crescimento populacional. Data limite já passou.
+                        </p>
+                        <div class="activity-actions">
+                            <button class="btn btn-outline">Entregar Tarde</button>
+                            <button class="btn btn-primary">Ver Correção</button>
+                        </div>
+                    </div>
+</body>
+</html>

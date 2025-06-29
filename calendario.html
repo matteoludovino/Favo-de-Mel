@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Calendário - Favo de Mel</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">LOGO</div>
+            <ul class="nav-menu">
+                <li><a href="aulas.html">AULAS</a></li>
+                <li><a href="atividades.html">ATIVIDADES</a></li>
+                <li><a href="avisos.html">AVISOS</a></li>
+                <li><a href="calendario.html">CALENDÁRIO</a></li>
+                <li><a href="#">MEU PERFIL</a></li>
+                <li><a href="#">MINHA TURMA</a></li>
+                <li><a href="#">MINHAS NOTAS</a></li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <header class="page-header">
+                <h1 class="page-title">Calendário Acadêmico</h1>
+            </header>
+
+            <div class="calendar-controls">
+                <div class="month-navigation">
+                    <button class="nav-btn" id="prev-month">←</button>
+                    <h2 class="current-month">Maio 2025</h2>
+                    <button class="nav-btn" id="next-month">→</button>
+                </div>
+
+                <div class="view-options">
+                    <button class="view-btn active">Mês</button>
+                    <button class="view-btn">Semana</button>
+                    <button class="view-btn">Dia</button>
+                </div>
+            </div>
+
+            <div class="calendar">
+                <div class="calendar-weekdays">
+                    <div>Dom</div>
+                    <div>Seg</div>
+                    <div>Ter</div>
+                    <div>Qua</div>
+                    <div>Qui</div>
+                    <div>Sex</div>
+                    <div>Sáb</div>
+                </div>
+
+                <div class="calendar-days">
+                    <!-- Dias do mês anterior -->
+                    <div class="calendar-day other-month">
+                        <div class="day-number">27</div>
+                    </div>
+                    <div class="calendar-day other-month">
+                        <div class="day-number">28</div>
+                    </div>
+                    <div class="calendar-day other-month">
+                        <div class="day-number">29</div>
+                    </div>
+                    <div class="calendar-day other-month">
+                        <div class="day-number">30</div>
+                    </div>
+
+                    <!-- Dias do mês atual -->
+                    <div class="calendar-day">
+                        <div class="day-number">1</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">2</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">3</div>
+                        <div class="event event-lecture">Aula: Matemática</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">4</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">5</div>
+                        <div class="event event-activity">Exercício: Português</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">6</div>
+                        <div class="event event-lecture">Aula: História</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">7</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">8</div>
+                        <div class="event event-activity">Trabalho: Ciências</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">9</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">10</div>
+                        <div class="event event-exam">Prova: Matemática</div>
+                        <div class="event event-lecture">Aula: Português</div>
+                        <div class="event-more">+2 eventos</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">11</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">12</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">13</div>
+                        <div class="event event-lecture">Aula: Matemática</div>
+                    </div>
+                    <div class="calendar-day today">
+                        <div class="day-number">14</div>
+                        <div class="event event-activity">Entrega: Redação</div>
+                        <div class="event event-lecture">Aula: Ciências</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">15</div>
+                        <div class="event event-exam">Prova: História</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">16</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">17</div>
+                        <div class="event event-activity">Exercício: Matemática</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">18</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">19</div>
+                        <div class="event event-lecture">Aula: Português</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">20</div>
+                        <div class="event event-exam">Prova: Ciências</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">21</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">22</div>
+                        <div class="event event-activity">Experimento: Química</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">23</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">24</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">25</div>
+                        <div class="event event-lecture">Aula: Matemática</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">26</div>
+                        <div class="event event-activity">Trabalho: História</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">27</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">28</div>
+                        <div class="event event-exam">Prova: Português</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">29</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">30</div>
+                        <div class="event event-lecture">Aula: Ciências</div>
+                    </div>
+                    <div class="calendar-day">
+                        <div class="day-number">31</div>
+                        <div class="event event-activity">Questionário: História</div>
+                    </div>
+
+                    <!-- Dias do próximo mês -->
+                    <div class="calendar-day other-month">
+                        <div class="day-number">1</div>
+                    </div>
+                    <div class="calendar-day other-month">
+                        <div class="day-number">2</div>
+                    </div>
+                    <div class="calendar-day other-month">
+                        <div class="day-number">3</div>
+                    </div>
+                    <div class="calendar-day other-month">
+                        <div class="day-number">4</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color lecture-color"></div>
+                    <span>Aula</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color exam-color"></div>
+                    <span>Prova</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color activity-color"></div>
+                    <span>Atividade</span>
+                </div>
+            </div>
+
+            <!-- Modal de Evento (hidden por padrão) -->
+            <div class="event-modal" id="event-modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div class="event-details">
+                        <h3>Prova: Matemática</h3>
+                        <div class="event-info">
+                            <strong>Data:</strong> 10/05/2025
+                        </div>
+                        <div class="event-info">
+                            <strong>Horário:</strong> 14:00 - 16:00
+                        </div>
+                        <div class="event-info">
+                            <strong>Local:</strong> Sala 203
+                        </div>
+                        <div class="event-info">
+                            <strong>Matéria:</strong> Matemática
+                        </div>
+                        <div class="event-info">
+                            <strong>Conteúdo:</strong> Álgebra Linear, Matrizes
+                        </div>
+                        <div class="event-info">
+                            <strong>Status:</strong> <span style="color: #c62828;">Pendente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
