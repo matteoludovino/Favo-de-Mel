@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Minhas Notas - Projeto Extensionista</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">LOGO</div>
+            <ul class="nav-menu">
+                <li><a href="aulas.html">AULAS</a></li>
+                <li><a href="atividades.html">ATIVIDADES</a></li>
+                <li><a href="avisos.html">AVISOS</a></li>
+                <li><a href="calendario.html">CALENDÁRIO</a></li>
+                <li><a href="perfil.html">MEU PERFIL</a></li>
+                <li><a href="turma.html">MINHA TURMA</a></li>
+                <li><a href="notas.html">MINHAS NOTAS</a></li>
+            </ul>
+        </aside>
+        
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <header class="page-header">
+                <h1 class="page-title">Minhas Notas</h1>
+            </header>
+            
+            <div class="tabs">
+                <div class="tab active">Visão Geral</div>
+                <div class="tab">Detalhado</div>
+                <div class="tab">Histórico</div>
+            </div>
+            
+            <h2 style="margin-bottom: 20px;">Desempenho por Disciplina</h2>
+            <div class="grades-summary">
+                <!-- Matemática -->
+                <div class="summary-card">
+                    <div class="subject-header">
+                        <div class="subject-icon">M</div>
+                        <div>
+                            <div class="subject-name">Matemática</div>
+                            <div class="subject-avg">Média: 8.7</div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-info">
+                            <span>Progresso</span>
+                            <span>87%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 87%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="grade-details">
+                        <div class="grade-item">
+                            <div class="grade-value">24</div>
+                            <div class="grade-label">Acertos</div>
+                        </div>
+                        <div class="grade-item">
+                            <div class="grade-value">4</div>
+                            <div class="grade-label">Erros</div>
+                        </div>
+                        <div class="grade-item">
+                            <div class="grade-value">85%</div>
+                            <div class="grade-label">Eficiência</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Português -->
+                <div class="summary-card">
+                    <div class="subject-header">
+                        <div class="subject-icon">P</div>
+                        <div>
+                            <div class="subject-name">Português</div>
+                            <div class="subject-avg">Média: 7.9</div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-info">
+                            <span>Progresso</span>
+                            <span>79%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 79%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="grade-details">
+                        <div class="grade-item">
+                            <div class="grade-value">19</div>
+                            <div class="grade-label">Acertos</div>
+                        </div>
+                        <div class="grade-item">
+                            <div class="grade-value">6</div>
+                            <div class="grade-label">Erros</div>
+                        </div>
+                        <div class="grade-item">
+                            <div class="grade-value">76%</div>
+                            <div class="grade-label">Eficiência</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ciências -->
+                <div class="summary-card">
+                    <div class="subject-header">
+                        <div class="subject-icon">C</div>
+                        <div>
+                            <div class="subject-name">Ciências</div>
+                            <div class="subject-avg">Média: 9.2</div>
+                        </div>
+                    </div>
+                    
+                    <div class="progress-container">
+                        <div class="progress-info">
+                            <span>Progresso</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="grade-details">
+                        <div class="grade-item">
+                            <div class="grade-value">22</div>
+                            <div class="grade-label">Acertos</div>
+                        </div>
+                        <div class="grade-item">
+                            <div class="grade-value">2</div>
+                            <div class="grade-label">Erros</div>
+                        </div>
+                        <div class="grade-item">
+                            <div class="grade-value">92%</div>
+                            <div class="grade-label">Eficiência</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 style="margin: 30px 0 20px;">Detalhamento de Notas</h2>
+            <table class="grades-table">
+                <thead>
+                    <tr>
+                        <th>Disciplina</th>
+                        <th>Atividade</th>
+                        <th>Data</th>
+                        <th>Acertos</th>
+                        <th>Nota</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Matemática</td>
+                        <td>Álgebra Linear</td>
+                        <td>10/05/2025</td>
+                        <td>18/20</td>
+                        <td class="grade-score grade-good">9.0</td>
+                        <td><span class="grade-status status-completed">Concluída</span></td>
+                    </tr>
+                    <tr>
+                        <td>Português</td>
+                        <td>Análise Textual</td>
+                        <td>12/05/2025</td>
+                        <td>15/20</td>
+                        <td class="grade-score grade-medium">7.5</td>
+                        <td><span class="grade-status status-completed">Concluída</span></td>
+                    </tr>
+                    <tr>
+                        <td>Ciências</td>
+                        <td>Genética</td>
+                        <td>15/05/2025</td>
+                        <td>19/20</td>
+                        <td class="grade-score grade-good">9.5</td>
+                        <td><span class="grade-status status-completed">Concluída</span></td>
+                    </tr>
+                    <tr>
+                        <td>Matemática</td>
+                        <td>Geometria Espacial</td>
+                        <td>18/05/2025</td>
+                        <td>17/20</td>
+                        <td class="grade-score grade-good">8.5</td>
+                        <td><span class="grade-status status-completed">Concluída</span></td>
+                    </tr>
+                    <tr>
+                        <td>História</td>
+                        <td>Era Vargas</td>
+                        <td>20/05/2025</td>
+                        <td>14/20</td>
+                        <td class="grade-score grade-medium">7.0</td>
+                        <td><span class="grade-status status-completed">Concluída</span></td>
+                    </tr>
+                    <tr>
+                        <td>Português</td>
+                        <td>Redação Dissertativa</td>
+                        <td>22/05/2025</td>
+                        <td>-</td>
+                        <td class="grade-score">-</td>
+                        <td><span class="grade-status status-pending">Correção</span></td>
+                    </tr>
+                    <tr>
+                        <td>Ciências</td>
+                        <td>Ecologia</td>
+                        <td>25/05/2025</td>
+                        <td>-</td>
+                        <td class="grade-score">-</td>
+                        <td><span class="grade-status status-pending">Pendente</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script>
+        // Função para alternar entre abas
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelector('.tab.active').classList.remove('active');
+                this.classList.add('active');
+                
+                // Aqui iria a lógica para mostrar o conteúdo correspondente à aba
+                // Por enquanto estamos mostrando tudo na mesma página
+            });
+        });
+        
+        // Simulação de gráfico (seria implementado com uma biblioteca como Chart.js na versão real)
+        console.log('Aqui seria implementado um gráfico de desempenho com Chart.js ou similar');
+    </script>
+</body>
+</html>
